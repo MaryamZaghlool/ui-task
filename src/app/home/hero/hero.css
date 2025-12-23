@@ -1,0 +1,54 @@
+.hero-section {
+  height: 550px;
+  background: url('/images/HeroImage.jpg') center center/cover no-repeat;
+  position: relative;
+
+  /* Optional overlay for better text visibility */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #092a1ecc; /* نصف شفاف أسود */
+    z-index: 1;
+  }
+
+  .container {
+    position: relative;
+    width: 624px;
+    z-index: 2;
+    margin-right: 5rem;
+
+    h1 {
+      font-size: 60px;
+      line-height: 72px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    form {
+      .search {
+        width: 490px;
+        margin-left: 16px;
+
+        i {
+          font-size: 20px;
+        }
+      }
+      button {
+        padding: 0 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section .container {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

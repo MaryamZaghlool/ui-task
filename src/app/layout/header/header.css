@@ -1,0 +1,35 @@
+.logo img {
+  width: 70px;
+  height: 60px;
+  margin-left: 16px;
+}
+
+.navbar {
+  padding: 0px 32px;
+  height: 72px;
+
+  .nav-item {
+    padding: 0 16px;
+    font-weight: bold;
+  }
+
+  #navbarTogglerDemo03 {
+    .icon {
+      min-width: 72px;
+
+      i {
+        font-size: 24px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+/* فقط على الشاشات الصغيرة */
+@media (max-width: 991px) {
+  .overlay-navbar {
+    background-color: #fff;
+    z-index: 1050;
+    padding: 2rem;
+  }
+}
