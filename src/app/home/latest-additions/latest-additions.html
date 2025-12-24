@@ -1,1 +1,33 @@
-<p>latest-additions works!</p>
+<section class="latest-additions">
+    <div class="container">
+        <div class="cardHeader d-flex justify-content-between align-items-center">
+            <h3>أحدث الاضافات</h3>
+            <a href="#" class="btn light border border-secondary text-dark">عرض الكل</a>
+        </div>
+
+        <div class="cards-container">
+            @for (latestAddition of latestAdditions; track $index) {
+            <div class="card">
+                <div class="card-contain">
+                    <img [src]="latestAddition.image" class="card-img-top rounded-3" [alt]="latestAddition.title" />
+
+                    <div class="card-body">
+                        <h5 class="card-title">{{ latestAddition.title }}</h5>
+
+                        <div class="tags">
+                            <span class="badge tag-outline">{{ latestAddition.tag1 }}</span>
+                            <span class="badge tag-outline">{{ latestAddition.tag2 }}</span>
+                        </div>
+
+                        <button class="arrow-btn">
+                            <i class="bi bi-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            }
+        </div>
+
+    </div>
+</section>

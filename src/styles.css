@@ -1,4 +1,19 @@
 body {
   /* font-family: 'Cairo', sans-serif !important; */
-  font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+  font-family: 'IBM Plex Sans Arabic' !important;
+}
+
+.color {
+  background-color: #067647 !important;
+}
+
+.btn {
+  min-height: 40px;
+  min-width: 40px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.light {
+  background-color: white;
 }

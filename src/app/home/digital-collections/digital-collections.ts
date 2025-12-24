@@ -7,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './digital-collections.css',
 })
 export class DigitalCollections {
-
+  digitalCollections: { title: string}[] = [{
+    title: "مكتبة عارف حكمة",
+  },
+  {
+    title: "المكتبة المحمودية",
+  },
+  {
+    title: "مكتبة رباط عثمان بن عفان",
+  }]
 }

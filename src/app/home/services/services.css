@@ -1,4 +1,5 @@
 section {
+  font-family: 'IBM Plex Sans Arabic' !important;
   min-height: 378px;
   background-color: #f9fafb;
   padding: 40px 0;
@@ -46,17 +47,6 @@ section {
     }
     .btns {
       gap: 16px;
-      .btn {
-        min-height: 40px;
-        min-width: 40px;
-        font-weight: 500;
-      }
-      .light {
-        background-color: white;
-      }
-      .color {
-        background-color: #067647;
-      }
     }
   }
 }

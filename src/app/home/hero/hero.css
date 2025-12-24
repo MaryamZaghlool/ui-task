@@ -1,4 +1,5 @@
 .hero-section {
+  font-family: 'IBM Plex Sans Arabic' !important;
   height: 550px;
   background: url('/images/HeroImage.jpg') center center/cover no-repeat;
   position: relative;

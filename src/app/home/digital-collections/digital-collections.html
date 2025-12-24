@@ -1,1 +1,24 @@
-<p>digital-collections works!</p>
+<section class="digital-collection">
+    <div class="container">
+       <div class="cardHeader d-flex justify-content-between align-items-center">
+         <h3>المكتبات الوقفية</h3>
+         <a href="#" class="btn light border border-secondary text-dark">عرض الكل</a>
+       </div>
+
+        <div class="cards-container">
+            @for (digitalCollection of digitalCollections; track $index) {
+            <div class="card">
+                <div class="card-contain">
+                    <img src="images/digital-collections.jpg" class="card-img-top rounded-2" alt="digital-collection">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ digitalCollection.title }}</h5>
+                        <p class="card-text">نبذة</p>
+                        <a href="#" class="btn color text-light">استعراض</a>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+
+    </div>
+</section>
