@@ -52,4 +52,13 @@
     margin-right: auto;
     margin-left: auto;
   }
+
+  form{
+    flex-wrap: wrap;
+    justify-content: center;
+
+    button{
+      margin-top: 10px;
+    }
+  }
 }

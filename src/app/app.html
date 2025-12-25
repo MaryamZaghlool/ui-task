@@ -1,6 +1,15 @@
 <app-header></app-header>
 <app-hero></app-hero>
 <app-services></app-services>
-<app-digital-collections></app-digital-collections>
-<app-latest-additions></app-latest-additions>
+<!-- <app-digital-collections></app-digital-collections> -->
+
+<app-cards-section title="المكتبات الوقفية" [data]="digitalCollections" sectionClass="digital-collection"
+    actionType="button" actionLabel="استعراض">
+</app-cards-section>
+
+<app-cards-section title="أحدث الاضافات" [data]="latestAdditions" sectionClass="latest-additions" actionType="arrow">
+</app-cards-section>
+
+<!-- <app-latest-additions></app-latest-additions> -->
+
 <app-footer></app-footer>

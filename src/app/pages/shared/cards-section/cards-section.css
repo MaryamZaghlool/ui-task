@@ -1,0 +1,90 @@
+section {
+  font-family: 'IBM Plex Sans Arabic' !important;
+  padding: 40px 0;
+
+  h3 {
+    margin-bottom: 32px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    justify-items: center;
+  }
+
+  .card {
+    width: 100%;
+
+    .card-contain {
+      padding: 16px;
+
+      img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border: 1px solid #d1d5db;
+      }
+
+      h5 {
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      .tags {
+        display: flex;
+        gap: 8px;
+        margin: 24px 0;
+      }
+
+      .tag-outline {
+        border: 1px solid #d1d5db;
+        background-color: transparent;
+        color: #1f2a37;
+        background-color: #f9fafb;
+        padding: 6px 12px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 500;
+
+        @media (max-width: 480px) {
+          padding: 3px 8px;
+          font-size: 12px;
+        }
+      }
+
+      .arrow-btn {
+        margin-right: auto;
+        width: 147px;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        background-color: #f3f4f6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      .arrow-btn i {
+        font-size: 24px;
+
+        @media (max-width: 480px) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+/* اختلافات */
+.latest-additions {
+  background-color: #f9fafb;
+  min-height: 598px;
+}
+
+.digital-collection {
+  background-color: white;
+}

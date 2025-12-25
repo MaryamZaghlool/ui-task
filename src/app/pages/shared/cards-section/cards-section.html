@@ -1,0 +1,45 @@
+<section [ngClass]="sectionClass">
+    <div class="container">
+        <div class="cardHeader d-flex justify-content-between align-items-center">
+            <h3>{{ title }}</h3>
+            <a *ngIf="showViewAll" href="#" class="btn light border border-secondary text-dark">
+                عرض الكل
+            </a>
+        </div>
+
+        <div class="cards-container">
+            @for (item of data; track $index) {
+            <div class="card">
+                <div class="card-contain">
+
+                    <img [src]="item.image" class="card-img-top rounded-3" [alt]="item.title" />
+
+                    <div class="card-body">
+                        <h5>{{ item.title }}</h5>
+
+                        <!-- TAGS -->
+                        <div *ngIf="item.tags?.length" class="tags">
+                            @for (tag of item.tags; track $index) {
+                            <span class="badge tag-outline">{{ tag }}</span>
+                            }
+                        </div>
+
+                        <!-- DESCRIPTION -->
+                        <p *ngIf="item.description">{{ item.description }}</p>
+
+                        <!-- ACTION -->
+                        <button *ngIf="actionType === 'arrow'" class="arrow-btn">
+                            <i class="bi bi-arrow-left"></i>
+                        </button>
+
+                        <a *ngIf="actionType === 'button'" class="btn color text-light">
+                            {{ actionLabel }}
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</section>
