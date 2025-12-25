@@ -10,7 +10,7 @@ import { CardsSectionComponent } from "./pages/shared/cards-section/cards-sectio
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Hero, Services, DigitalCollections, LatestAdditions, Footer, CardsSectionComponent],
+  imports: [Header, Hero, Services, Footer, CardsSectionComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
